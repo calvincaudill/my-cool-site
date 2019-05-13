@@ -5,10 +5,31 @@
   <title>Cool website</title>
 </head>
 <body>
-  <p>Click this link!</p>
-  <a href="https://i.ytimg.com/vi/JnBrl8906kE/maxresdefault.jpg">Cool guy</a>
+    <form>
+      Password: <input type="text" id="password"><br>
+    
+      <input type="submit" value="Submit">
+    </form>
+    <script>
+      var password = document.getElementById("password")
+      password.onchange = validatePassword
+      
+      function validatePassword(){
+        if(password.value != "calviniscool"){
 
-  <p>This is a body.</p>
+        alert("Incorrect password")
+
+        }
+
+        else{alert("Correct password")}
+      
+      
+      }
+
+    
+    
+    </script>
+  
 </body>
 </html>
 
