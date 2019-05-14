@@ -17,11 +17,11 @@
       function validatePassword(){
         if(password.value != "calviniscool"){
 
-        alert("Incorrect password")
+          passowrd.value.setCustomValidity("Password is incorrect")
 
         }
 
-        else{alert("Correct password")}
+        else{password.value.setCustomValidity("Password is correct");}
       
       
       }
